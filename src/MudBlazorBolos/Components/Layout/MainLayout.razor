@@ -1,23 +1,17 @@
 ﻿@inherits LayoutComponentBase
 
-<MudThemingProvider />
+<PageTitle>Bolos</PageTitle>
+
+<MudThemeProvider/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
 <MudLayout>
-    <MudAppBar Elevation="1">
-        <MudText Typo="Typo.h5" Class="ml-3">Application</MudText>
+    <MudAppBar Color="Color.Primary">
+        <MudIconButton Icon="@Icons.Material.Rounded.Cake" Color="Color.Inherit"/>
+        <MudText Typo="Typo.h4">Bolos da Vovó</MudText>
     </MudAppBar>
-    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
-        <NavMenu />
-    </MudDrawer>
-    <MudMainContent Class="mt-16 pa-4">
+    <MudMainContent Class="mt-4">
         @Body
     </MudMainContent>
 </MudLayout>
-
-@code {
-    private bool _drawerOpen = true;
-
-    private void DrawerToggle()
-    {
-        _drawerOpen = !_drawerOpen;
-    }
-}
