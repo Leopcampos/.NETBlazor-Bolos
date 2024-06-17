@@ -1,3 +1,5 @@
+using MudBlazorBolos.Data;
+using Microsoft.EntityFrameworkCore;
 using MudBlazor.Services;
 using MudBlazorBolos.Components;
 
@@ -8,6 +10,9 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.Services.AddMudServices();
+
+builder.Services.AddDbContext<AppDbContext>(opt 
+    => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
