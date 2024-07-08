@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MudBlazorBolos.Models;
+using MudBlazorBolos.Domain.Models;
 
 namespace MudBlazorBolos.Data;
 
