@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MudBlazor;
-using MudBlazorBolos.Models;
+using MudBlazorBolos.Domain.Models;
 
 namespace MudBlazorBolos.Components.Pages
 {

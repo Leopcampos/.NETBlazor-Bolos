@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MudBlazorBolos.Models;
+namespace MudBlazorBolos.Domain.Models;
 
 public class Bolo
 {
